@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>여성학 기말시험 MASTER</title>
+  <style>
+    :root{
+      --bg:#0f1220;--card:#171b2f;--card2:#202641;--text:#f5f7ff;--muted:#aeb7d8;--accent:#ff7ab6;--accent2:#7ae7ff;--good:#9dffb0;--warn:#ffe28a;
+      --shadow:0 14px 40px rgba(0,0,0,.28);--radius:22px;
+    }
+    *{box-sizing:border-box} body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",Arial,sans-serif;background:radial-gradient(circle at 20% 0%,#2a1d4f 0,#0f1220 34%),var(--bg);color:var(--text);line-height:1.65}
+    a{color:var(--accent2)} .wrap{max-width:1100px;margin:0 auto;padding:24px 16px 70px}.hero{padding:34px 22px;border-radius:28px;background:linear-gradient(135deg,rgba(255,122,182,.22),rgba(122,231,255,.13));box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.1)}
+    h1{font-size:34px;margin:0 0 8px} h2{font-size:25px;margin:34px 0 14px} h3{font-size:20px;margin:22px 0 10px}.sub{color:var(--muted);margin:0}.pillrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.pill{padding:7px 11px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.12);font-size:13px;color:#fff}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0}.box{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.11);border-radius:18px;padding:16px}.box b{color:var(--accent2)}
+    .toolbar{position:sticky;top:0;z-index:5;margin:18px -16px 10px;padding:10px 16px;background:rgba(15,18,32,.84);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08)} input{width:100%;padding:13px 15px;border-radius:15px;border:1px solid rgba(255,255,255,.15);background:#11162a;color:white;font-size:16px}
+    details{background:var(--card);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);margin:13px 0;box-shadow:var(--shadow);overflow:hidden}summary{cursor:pointer;padding:18px 18px;font-weight:800;font-size:18px;list-style:none;display:flex;justify-content:space-between;gap:10px}summary::-webkit-details-marker{display:none}summary:after{content:"▼";font-size:13px;color:var(--accent2)}details[open] summary:after{content:"▲"}.content{padding:0 18px 20px;border-top:1px solid rgba(255,255,255,.08)}
+    .ko,.mn,.exam{padding:14px 14px;border-radius:16px;margin:12px 0}.ko{background:rgba(122,231,255,.08);border-left:4px solid var(--accent2)}.mn{background:rgba(255,122,182,.08);border-left:4px solid var(--accent)}.exam{background:rgba(255,226,138,.08);border-left:4px solid var(--warn)}
+    .tag{font-size:12px;font-weight:800;letter-spacing:.08em;color:var(--muted);display:block;margin-bottom:5px} ul{padding-left:20px}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.q{background:var(--card2);padding:14px;border-radius:15px;border:1px solid rgba(255,255,255,.09)}.q b{color:var(--good)}
+    .quick{display:flex;gap:8px;flex-wrap:wrap}.quick a{text-decoration:none;color:var(--text);background:rgba(255,255,255,.09);padding:8px 10px;border-radius:12px;font-size:14px}.topbtn{position:fixed;right:16px;bottom:18px;background:var(--accent);color:white;border:0;border-radius:999px;padding:12px 15px;font-weight:800;box-shadow:var(--shadow)}
+    @media(max-width:760px){h1{font-size:28px}.grid,.cards{grid-template-columns:1fr}.wrap{padding:18px 12px 70px}.toolbar{margin-left:-12px;margin-right:-12px}summary{font-size:16px}.hero{padding:26px 18px}}
+  </style>
+</head>
+<body>
+<div class="wrap" id="top">
+  <section class="hero">
+    <h1>여성학 기말시험 MASTER</h1>
+    <p class="sub">Монгол + 한국어 정리 · 2주~13주 · 단답형/약술형/서술형 대비</p>
+    <div class="pillrow"><span class="pill">단답형 4~5개</span><span class="pill">약술형 3~4개</span><span class="pill">서술형 1~2개</span><span class="pill">PPT + 강의 중심</span></div>
+  </section>
+
+  <div class="toolbar"><input id="search" placeholder="검색: 교차성, 퀴어, 강한 객관성, 가족주의..." /></div>
+
+  <h2>빠른 이동</h2><div class="quick">
+    <a href="#w2">2주</a><a href="#w3">3주</a><a href="#w4">4주</a><a href="#w5">5주</a><a href="#w6">6주</a><a href="#w7">7주</a><a href="#w8">8주</a><a href="#w9">9주</a><a href="#w11">11주</a><a href="#w12">12주</a><a href="#w13">13주</a><a href="#review">Final Review</a><a href="#top100">TOP 100</a>
+  </div>
+
+  <h2>시험에서 제일 중요한 관점</h2>
+  <div class="grid">
+    <div class="box"><b>개인 문제가 아니라 구조 문제</b><br>여성/소수자의 경험을 개인 탓으로 보지 않고 사회 구조와 권력관계로 설명.</div>
+    <div class="box"><b>중립성 비판</b><br>과학, 예술, 가족, 노동의 기준이 정말 객관적인지 질문.</div>
+    <div class="box"><b>다르게 보기</b><br>소수자 위치에서 보면 더 넓고 강한 객관성으로 갈 수 있음.</div>
+  </div>
+
+  <details id="w2" open><summary>2주. 여성학은 여성만 다루나요? — 젠더 인식론과 페미니즘 역사</summary><div class="content searchable">
+    <div class="ko"><span class="tag">한국어 핵심</span>여성학은 여성만 따로 연구하는 학문이 아니라, 젠더를 통해 사회의 권력관계와 지식 생산 방식을 다시 보는 학문이다. 중요한 태도는 낯설게 보기, 다르게 보기, 소수자의 경험에서 출발하기이다.</div>
+    <div class="mn"><span class="tag">Монгол тайлбар</span>Эмэгтэй судлал гэдэг нь зөвхөн эмэгтэй хүний тухай биш. Харин нийгэм юуг “хэвийн”, “төв”, “үнэн” гэж үзэж ирснийг жендерийн өнцгөөс дахин харах хичээл.</div>
+    <ul><li><b>교차성</b>: 성별, 계급, 인종, 장애, 성적 지향 등이 겹쳐 차별 경험을 만든다.</li><li><b>특권</b>: 우연히 가진 유리한 위치. 가진 사람은 잘 못 느낀다.</li><li><b>상황지어진 지식</b>: 지식은 항상 특정 위치와 경험 속에서 만들어진다.</li></ul>
+    <div class="exam"><b>예상 약술</b> 교차성이란 무엇이며 왜 여성학에서 중요한가?</div>
+  </div></details>
+
+  <details id="w3"><summary>3주. 젠더 개념과 사회문제 — 에코페미니즘</summary><div class="content searchable">
+    <div class="ko"><span class="tag">한국어 핵심</span>에코페미니즘은 여성, 식민지, 자연이 자본주의와 가부장제 안에서 ‘공짜 자원’처럼 착취되어 왔다고 본다.</div>
+    <div class="mn"><span class="tag">Монгол тайлбар</span>Экофеминизм нь эмэгтэйчүүдийг дарах явдал, колоничлол, байгаль сүйтгэл бүгд ижил эрх мэдэл ба ашиглалтын бүтэцтэй холбоотой гэж тайлбарладаг.</div>
+    <ul><li><b>가부장제</b>: 남성 중심의 권력 구조.</li><li><b>자본주의적 축적</b>: 노동, 자연, 생명을 비용 없이 이용하려는 구조.</li><li><b>탈위계적 세계</b>: 인간/자연, 남성/여성의 위계를 넘는 관계.</li></ul>
+    <div class="exam"><b>예상 단답</b> 에코페미니즘 / 가부장제 / 원시적 축적</div>
+  </div></details>
+
+  <details id="w4"><summary>4주. 퀴어 개념과 성소수자 이슈</summary><div class="content searchable">
+    <div class="ko"><span class="tag">한국어 핵심</span>주디스 버틀러는 젠더가 본질이 아니라 반복되는 행위와 규범 속에서 수행된다고 보았다. 퀴어 이론은 성, 젠더, 욕망의 고정된 연결을 흔든다.</div>
+    <div class="mn"><span class="tag">Монгол тайлбар</span>Жудит Батлерын санаа: жендер бол төрөлхийн хатуу мөн чанар биш, нийгмийн дүрмийг давтан үйлдэхээр бий болдог. Күийр онол нь “эрэгтэй/эмэгтэй”, “нормал/гаж” гэсэн тогтсон ойлголтыг асуудаг.</div>
+    <ul><li><b>젠더 수행성</b>: 젠더는 타고난 본질이 아니라 반복적 실천.</li><li><b>퀴어</b>: 고정된 정상성에 질문하는 태도.</li><li><b>이성애 규범성</b>: 이성애를 당연하고 정상으로 보는 규범.</li></ul>
+    <div class="exam"><b>예상 약술</b> 젠더 수행성을 설명하시오.</div>
+  </div></details>
+
+  <details id="w5"><summary>5주. 페미니즘 배우기와 행하기 — 페다고지</summary><div class="content searchable">
+    <div class="ko"><span class="tag">한국어 핵심</span>페미니즘은 단순히 싸움의 기술이 아니라 말하기와 듣기, 불편함을 견디며 배우는 과정이다. 안다는 것은 때로 상처받는 일이며, 새로운 언어는 익숙한 상식을 흔든다.</div>
+    <div class="mn"><span class="tag">Монгол тайлбар</span>Феминизм сурах нь зүгээр маргах арга биш. Бусдын туршлагыг сонсож, өөрийн мэдэхгүй байсан шударга бус байдлыг мэдээд тавгүй болох, тэгсэн ч өөрчлөгдөх үйл явц.</div>
+    <ul><li><b>페다고지</b>: 가르침의 이론, 방법, 철학.</li><li><b>경험의 지식화</b>: 개인 경험을 사회 구조와 연결해 이해.</li><li><b>대화</b>: 이기는 것이 아니라 서로의 위치를 교환.</li></ul>
+    <div class="exam"><b>예상 서술</b> 페미니즘 수업에서 ‘듣기’가 왜 중요한가?</div>
+  </div></details>
+
+  <details id="w6"><summary>6주. 젠더폭력 — 법과 경험의 틈새</summary><div class="content searchable">
+    <div class="ko"><span class="tag">한국어 핵심</span>젠더폭력은 개인의 일탈이 아니라 불평등한 젠더 권력관계에서 발생하는 구조적 폭력이다. 성폭력, 성희롱, 스토킹, 데이트폭력, 페미사이드 등이 포함된다.</div>
+    <div class="mn"><span class="tag">Монгол тайлбар</span>Жендерийн хүчирхийлэл нь “хувь хүний асуудал” биш. Нийгэм дэх эрэгтэй/эмэгтэй, ахмад/залуу, дарга/ажилтан гэх мэт эрх мэдлийн ялгаатай холбоотой.</div>
+    <ul><li><b>Speak-out</b>: 피해 경험을 말하며 사회 문제화.</li><li><b>MeToo</b>: 개인 경험을 집단적 문제로 드러낸 운동.</li><li><b>성폭력 통념</b>: 피해자 탓, 가해자 예외화 등 왜곡된 인식.</li></ul>
+    <div class="exam"><b>예상 약술</b> 젠더폭력이 개인 문제가 아닌 이유를 설명하시오.</div>
+  </div></details>
+
+  <details id="w7"><summary>7주. 성매매 — 자원화와 피해의 순환</summary><div class="content searchable">
+    <div class="ko"><span class="tag">한국어 핵심</span>성매매는 개인 여성의 도덕성 문제가 아니라 가부장제, 남성중심적 섹슈얼리티, 자본주의 성산업 구조가 얽힌 사회 구조적 문제이다.</div>
+    <div class="mn"><span class="tag">Монгол тайлбар</span>Биеэ үнэлэлт нь “тэр эмэгтэйн буруу” гэж тайлбарлах асуудал биш. Ядуу байдал, хүйсийн эрх мэдэл, капиталист ашиг, эрэгтэй төвтэй бэлгийн соёл холилдсон бүтэц.</div>
+    <ul><li><b>공창제도</b>: 국가가 성매매를 관리한 제도.</li><li><b>성산업</b>: 사람의 몸을 자원화하는 산업 구조.</li><li><b>인권 관점</b>: 낙인보다 피해와 구조를 봐야 함.</li></ul>
+    <div class="exam"><b>예상 서술</b> 성매매를 구조적 문제로 보는 여성주의 관점을 설명하시오.</div>
+  </div></details>
+
+  <details id="w8"><summary>8주. 재생산과 과학기술 — 낙태죄와 디지털 성폭력</summary><div class="content searchable">
+    <div class="ko"><span class="tag">한국어 핵심</span>재생산권은 임신, 출산, 피임, 낙태, 양육과 관련하여 자신의 몸과 삶을 스스로 결정할 권리이다. 재생산은 법, 정치, 문화, 경제가 얽힌 문제이다.</div>
+    <div class="mn"><span class="tag">Монгол тайлбар</span>Нөхөн үйлдвэрлэлийн эрх гэдэг нь жирэмслэх эсэх, төрөх эсэх, хүүхэдтэй болох эсэх, өөрийн бие ба амьдралыг өөрөө шийдэх эрх.</div>
+    <ul><li><b>재생산권</b>: 차별, 강제, 폭력 없이 재생산을 결정할 권리.</li><li><b>낙태죄</b>: 여성 몸을 국가와 사회가 통제한 사례.</li><li><b>디지털 성폭력</b>: 기술이 성폭력의 매개가 될 수 있음.</li></ul>
+    <div class="exam"><b>예상 단답</b> 재생산권 / 낙태죄 / 디지털 성폭력</div>
+  </div></details>
+
+  <details id="w9"><summary>9주. 남성성들 — 대안적 남성성</summary><div class="content searchable">
+    <div class="ko"><span class="tag">한국어 핵심</span>남성성은 생물학적 남성에게 자연스럽게 있는 것이 아니라, 사회가 반복적으로 요구하고 보상하는 젠더 규범이다. 남성성은 하나가 아니라 여러 ‘남성성들’로 존재한다.</div>
+    <div class="mn"><span class="tag">Монгол тайлбар</span>Эрэгтэйлэг чанар нь төрөлхийн нэг зүйл биш. Нийгэм “жинхэнэ эр хүн” гэж ямар дүрийг шагнаж, ямар дүрийг дорд үзэж байгаагаар бүтээгддэг.</div>
+    <ul><li><b>헤게모니적 남성성</b>: 가장 정상적이고 우월하다고 여겨지는 남성성.</li><li><b>군대</b>: 남성성을 형성하는 중요한 장소로 분석됨.</li><li><b>대안적 남성성</b>: 지배/폭력 중심이 아닌 돌봄과 평등의 남성성.</li></ul>
+    <div class="exam"><b>예상 약술</b> 헤게모니적 남성성이란?</div>
+  </div></details>
+
+  <details id="w11"><summary>11주. 노동 — 보이지 않는 일과 젠더 격차</summary><div class="content searchable">
+    <div class="ko"><span class="tag">한국어 핵심</span>노동은 임금노동만이 아니라 가사노동, 돌봄노동, 감정노동처럼 사회를 유지하지만 낮게 평가되는 일까지 포함해 보아야 한다.</div>
+    <div class="mn"><span class="tag">Монгол тайлбар</span>Хөдөлмөр гэдэг нь зөвхөн цалинтай ажил биш. Гэрийн ажил, асаргаа, сэтгэл хөдлөлөө удирдаж бусдад үйлчлэх ажил зэрэг үл харагддаг хөдөлмөр ч нийгмийг авч явдаг.</div>
+    <ul><li><b>일(work)</b>: 보수 유무와 상관없이 사회적으로 유용한 활동.</li><li><b>노동(labor)</b>: 경제적 자원을 얻기 위한 활동.</li><li><b>감정노동</b>: 직업상 감정을 관리하고 표현하는 노동.</li><li><b>돌봄노동</b>: 타인의 생존과 생활을 돌보는 노동.</li><li><b>성별임금격차</b>: 개인 능력만으로 설명되지 않는 구조적 격차.</li></ul>
+    <div class="exam"><b>예상 서술</b> 보이지 않는 노동이 왜 여성학의 중요한 주제인가?</div>
+  </div></details>
+
+  <details id="w12"><summary>12주. 과학기술과 예술 — 강한 객관성</summary><div class="content searchable">
+    <div class="ko"><span class="tag">한국어 핵심</span>“왜 위대한 여성 미술가는 없었는가?”라는 질문은 여성이 부족했다는 뜻이 아니라, 위대함의 기준과 제도가 남성 중심으로 만들어졌다는 점을 묻는다. 과학기술도 마찬가지로 중립적이지 않을 수 있다.</div>
+    <div class="mn"><span class="tag">Монгол тайлбар</span>“Яагаад агуу эмэгтэй уран бүтээлч цөөн байсан бэ?” гэдэг нь эмэгтэйчүүд чадваргүй гэсэн үг биш. Харин “агуу” гэж үнэлэх шалгуур, боловсрол, байгууллага, боломж хэнд нээлттэй байсан бэ гэдгийг асууж байна.</div>
+    <ul><li><b>Linda Nochlin</b>: 위대한 여성 미술가가 없었던 이유를 개인 능력보다 제도에서 찾음.</li><li><b>결핍모델</b>: 여성이 부족하니 여성을 고쳐야 한다는 관점.</li><li><b>성인지적 관점</b>: 성별 차이를 고려하지만 고정관념을 반복할 위험도 있음.</li><li><b>Sandra Harding</b>: 강한 객관성. 누구의 과학, 누구의 지식인가를 묻는다.</li><li><b>Donna Haraway</b>: 상황지어진 지식. 신의 시점 같은 중립적 지식은 불가능.</li><li><b>강한 객관성</b>: 소수자의 위치와 문제 선택의 전제까지 성찰해 더 넓은 지식으로 가는 것.</li></ul>
+    <div class="exam"><b>예상 서술 1순위</b> 강한 객관성을 설명하고, 기존 객관성과 어떻게 다른지 쓰시오.</div>
+  </div></details>
+
+  <details id="w13"><summary>13주. 가족 — 누구와 어떻게 살 것인가</summary><div class="content searchable">
+    <div class="ko"><span class="tag">한국어 핵심</span>가족은 결혼, 혈연, 입양만으로 규정되지 않는다. 함께 살고 돌보고 의지하는 다양한 관계가 가족이 될 수 있다. 여성학은 정상가족 이데올로기와 가족 안의 권력 불균형을 비판한다.</div>
+    <div class="mn"><span class="tag">Монгол тайлбар</span>Гэр бүл гэдэг нь зөвхөн гэрлэлт, цусны холбоо, үрчлэлтээр хязгаарлагдахгүй. Хамт амьдарч, бие биедээ түшиг болдог олон хэлбэрийн харилцаа гэр бүл байж болно.</div>
+    <ul><li><b>가족주의</b>: 국가/사회가 책임질 일을 가족에게 맡기는 문화.</li><li><b>도구적 가족주의</b>: 가족 구성원을 성공과 계층 유지의 수단처럼 쓰는 가족주의.</li><li><b>정상가족 이데올로기</b>: 아버지+어머니+자녀 핵가족만 정상이라고 보는 믿음.</li><li><b>호주제</b>: 남성 호주 중심의 가족 제도. 2005년 폐지.</li><li><b>가사노동</b>: 집과 가족을 유지하는 노동.</li><li><b>기획노동</b>: 어린이집, 식단, 병원, 일정 등 보이지 않는 계획/관리 노동.</li><li><b>다양한 가족</b>: 1인 가구, 비친족 가구, 동거, 한부모, 무자녀, 성소수자 가족, 반려동물 가족.</li><li><b>혼인평등</b>: 동성 부부 등 다양한 결합도 평등하게 인정해야 한다는 관점.</li></ul>
+    <div class="exam"><b>예상 서술 1순위</b> 정상가족 이데올로기와 한국 가족주의의 문제를 설명하시오.</div>
+  </div></details>
+
+  <section id="review"><h2>Final Review — 반드시 외울 것</h2>
+    <div class="cards">
+      <div class="q"><b>1. 교차성</b><br>차별은 성별 하나가 아니라 계급, 인종, 장애 등이 겹쳐 만들어진다.</div>
+      <div class="q"><b>2. 젠더 수행성</b><br>젠더는 본질이 아니라 반복되는 행위와 규범으로 구성된다.</div>
+      <div class="q"><b>3. 재생산권</b><br>임신·출산·피임·낙태·양육을 스스로 결정할 권리.</div>
+      <div class="q"><b>4. 감정노동</b><br>직업상 자신의 감정을 관리하고 표현하는 노동.</div>
+      <div class="q"><b>5. 강한 객관성</b><br>소수자 위치와 문제 선택의 전제까지 포함하는 더 넓은 객관성.</div>
+      <div class="q"><b>6. 정상가족 이데올로기</b><br>이성애 핵가족만 정상이라고 보는 믿음.</div>
+    </div>
+  </section>
+
+  <section id="top100"><h2>TOP 100 예상문제</h2><p class="sub">정답은 짧게 외우기 좋게 만들었음. 자세한 답은 위 주차별 내용과 연결.</p><div class="cards searchable">
+<div class="q"><b>1. 교차성이란?</b><br>성별·계급·인종·장애 등이 겹쳐 차별 경험을 만든다는 관점.</div>
+<div class="q"><b>2. 특권이란?</b><br>우연히 가진 유리한 위치와 혜택.</div>
+<div class="q"><b>3. 여성학은 여성만 다루는가?</b><br>아니오. 젠더로 사회 권력과 지식 생산을 본다.</div>
+<div class="q"><b>4. 낯설게 보기란?</b><br>당연한 규범을 다시 질문하는 태도.</div>
+<div class="q"><b>5. 상황지어진 지식이란?</b><br>모든 지식은 특정 위치와 경험 속에서 만들어진다.</div>
+<div class="q"><b>6. 에코페미니즘이란?</b><br>여성 억압과 자연 착취를 연결해 보는 관점.</div>
+<div class="q"><b>7. 가부장제란?</b><br>남성 중심의 권력 구조.</div>
+<div class="q"><b>8. 자연이 ‘공짜’로 취급되었다는 뜻은?</b><br>자연과 여성 노동이 착취되었다는 뜻.</div>
+<div class="q"><b>9. Judith Butler는 누구인가?</b><br>퀴어 이론과 젠더 수행성의 대표 이론가.</div>
+<div class="q"><b>10. 젠더 수행성이란?</b><br>젠더가 반복적 행위로 구성된다는 이론.</div>
+<div class="q"><b>11. 퀴어란?</b><br>고정된 성/젠더/욕망 규범에 질문하는 태도.</div>
+<div class="q"><b>12. 이성애 규범성이란?</b><br>이성애를 정상으로 보는 사회 규범.</div>
+<div class="q"><b>13. Gender Trouble의 의미는?</b><br>젠더의 본질주의를 흔든 저작.</div>
+<div class="q"><b>14. 페다고지란?</b><br>가르침의 이론·방법·철학.</div>
+<div class="q"><b>15. 페미니즘에서 듣기가 중요한 이유는?</b><br>타인의 위치와 경험을 이해하기 위해.</div>
+<div class="q"><b>16. ‘안다는 것은 상처받는 일’의 의미는?</b><br>몰랐던 억압을 알면 기존 삶이 흔들리기 때문.</div>
+<div class="q"><b>17. 젠더폭력이란?</b><br>불평등한 젠더 권력관계에서 발생하는 폭력.</div>
+<div class="q"><b>18. 젠더폭력 예시는?</b><br>성폭력, 성희롱, 스토킹, 데이트폭력, 페미사이드.</div>
+<div class="q"><b>19. Speak-out이란?</b><br>피해 경험을 말해 사회 문제화하는 실천.</div>
+<div class="q"><b>20. MeToo의 의미는?</b><br>개인 피해를 구조적 문제로 드러낸 운동.</div>
+<div class="q"><b>21. 성폭력 통념이란?</b><br>피해자 탓, 가해자 예외화 같은 왜곡된 믿음.</div>
+<div class="q"><b>22. 성매매를 여성주의는 어떻게 보는가?</b><br>개인 도덕 문제가 아니라 구조적 문제로 본다.</div>
+<div class="q"><b>23. 공창제도란?</b><br>국가가 성매매를 관리·규제한 제도.</div>
+<div class="q"><b>24. 성산업의 문제는?</b><br>사람의 몸을 자원화하고 착취한다.</div>
+<div class="q"><b>25. 성매매와 인권 관점은?</b><br>낙인보다 구조와 피해를 봐야 한다.</div>
+<div class="q"><b>26. 재생산권이란?</b><br>몸과 출산에 관한 결정을 스스로 할 권리.</div>
+<div class="q"><b>27. 낙태죄의 정치학이란?</b><br>여성 몸이 국가와 사회 통제의 대상이 된 문제.</div>
+<div class="q"><b>28. 디지털 성폭력이란?</b><br>기술을 매개로 한 성적 폭력.</div>
+<div class="q"><b>29. 저출산 담론의 문제는?</b><br>여성에게 책임을 돌리는 경향이 있다.</div>
+<div class="q"><b>30. 남성성이란?</b><br>사회적으로 구성되는 젠더 규범.</div>
+<div class="q"><b>31. 남성성들은 왜 복수인가?</b><br>남성성은 하나가 아니라 맥락마다 다르기 때문.</div>
+<div class="q"><b>32. 헤게모니적 남성성이란?</b><br>가장 정상·우월하다고 여겨지는 지배적 남성성.</div>
+<div class="q"><b>33. 군대와 남성성의 관계는?</b><br>군대는 남성성을 만드는 중요한 장소로 작동한다.</div>
+<div class="q"><b>34. 대안적 남성성이란?</b><br>지배와 폭력이 아닌 돌봄과 평등의 남성성.</div>
+<div class="q"><b>35. 일(work)이란?</b><br>보수와 무관하게 사회적으로 유용한 활동.</div>
+<div class="q"><b>36. 노동(labor)이란?</b><br>생활 자원을 얻기 위한 활동.</div>
+<div class="q"><b>37. 가사노동이란?</b><br>가족과 집을 유지하는 노동.</div>
+<div class="q"><b>38. 돌봄노동이란?</b><br>타인의 생존과 생활을 돌보는 노동.</div>
+<div class="q"><b>39. 감정노동이란?</b><br>직업상 감정을 관리하고 표현하는 노동.</div>
+<div class="q"><b>40. 성별임금격차란?</b><br>성별에 따라 임금이 구조적으로 차이 나는 현상.</div>
+<div class="q"><b>41. 보이지 않는 노동이란?</b><br>가치 있지만 낮게 평가되거나 측정되지 않는 노동.</div>
+<div class="q"><b>42. Linda Nochlin의 질문은?</b><br>왜 위대한 여성 미술가는 없었는가?</div>
+<div class="q"><b>43. 그 질문의 핵심은?</b><br>여성 능력 부족이 아니라 제도와 기준의 문제.</div>
+<div class="q"><b>44. 결핍모델이란?</b><br>여성이 부족하므로 여성을 고쳐야 한다는 관점.</div>
+<div class="q"><b>45. 결핍모델의 한계는?</b><br>여성을 열등한 존재로 보이게 할 수 있다.</div>
+<div class="q"><b>46. 성인지적 관점이란?</b><br>성별 차이를 고려하는 관점.</div>
+<div class="q"><b>47. 성인지적 관점의 한계는?</b><br>성별 고정관념을 반복할 수 있다.</div>
+<div class="q"><b>48. Sandra Harding의 핵심은?</b><br>강한 객관성.</div>
+<div class="q"><b>49. Donna Haraway의 핵심은?</b><br>상황지어진 지식.</div>
+<div class="q"><b>50. 강한 객관성이란?</b><br>소수자 위치와 문제 선택의 전제를 포함하는 객관성.</div>
+<div class="q"><b>51. 기존 객관성의 문제는?</b><br>신의 시점처럼 중립적이라고 착각한다.</div>
+<div class="q"><b>52. 과학기술은 왜 중립적이지 않을 수 있는가?</b><br>연구 주제와 기준이 사회 가치에 영향받기 때문.</div>
+<div class="q"><b>53. PMS와 발기부전 사례의 의미는?</b><br>무엇을 중요한 연구로 삼는지가 중립적이지 않다.</div>
+<div class="q"><b>54. 엘리베이터 사례의 의미는?</b><br>소수자 권리가 모두의 접근성을 넓힌다.</div>
+<div class="q"><b>55. 가족의 법적 정의는?</b><br>혼인, 혈연, 입양 중심의 관계.</div>
+<div class="q"><b>56. 가족의 넓은 정의는?</b><br>함께 살고 돌보며 의지하는 친밀한 공동체.</div>
+<div class="q"><b>57. 한국 가족주의란?</b><br>국가·사회 책임을 가족에게 맡기는 문화.</div>
+<div class="q"><b>58. 도구적 가족주의란?</b><br>가족이 성공과 계층 유지의 수단이 되는 현상.</div>
+<div class="q"><b>59. 정상가족 이데올로기란?</b><br>이성애 핵가족만 정상으로 보는 믿음.</div>
+<div class="q"><b>60. 호주제란?</b><br>남성 호주 중심으로 가족을 구성한 제도.</div>
+<div class="q"><b>61. 호주제 폐지 연도는?</b><br>2005년.</div>
+<div class="q"><b>62. 기획노동이란?</b><br>가족 생활을 계획·관리하는 보이지 않는 노동.</div>
+<div class="q"><b>63. 기획노동 예시는?</b><br>어린이집 대기, 식단, 병원 예약, 가족 일정 관리.</div>
+<div class="q"><b>64. 가정폭력은 왜 사회문제인가?</b><br>가족 내 권력 불균형과 젠더 구조 때문.</div>
+<div class="q"><b>65. 다양한 가족 예시는?</b><br>1인 가구, 비친족, 동거, 한부모, 성소수자 가족.</div>
+<div class="q"><b>66. 혼인평등이란?</b><br>다양한 결합을 평등하게 인정하는 것.</div>
+<div class="q"><b>67. 비친족 가구란?</b><br>혈연·법적 가족이 아니지만 함께 사는 가구.</div>
+<div class="q"><b>68. 외롭지 않을 권리란?</b><br>누구도 혼자서만 살 수 없으며 돌봄과 유대가 필요하다는 관점.</div>
+<div class="q"><b>69. 여성학의 핵심 질문은?</b><br>누구의 경험이 배제되었는가?</div>
+<div class="q"><b>70. 페미니즘은 여성 우월주의인가?</b><br>아니오. 더 평등한 세계를 위한 관점이다.</div>
+<div class="q"><b>71. 개인적인 것이 정치적이라는 뜻은?</b><br>개인 경험이 사회 구조와 연결되어 있다는 뜻.</div>
+<div class="q"><b>72. 사회 구조란?</b><br>개인 행동을 넘어 반복되는 제도와 권력관계.</div>
+<div class="q"><b>73. 소수자 관점이 중요한 이유는?</b><br>기존 기준의 한계를 드러내기 때문.</div>
+<div class="q"><b>74. 역차별 논쟁의 한계는?</b><br>구조적 불평등의 배경을 지울 수 있다.</div>
+<div class="q"><b>75. 여성 할당제 논쟁과 결핍모델의 관계는?</b><br>지원이 여성을 부족한 존재처럼 보이게 할 수 있다.</div>
+<div class="q"><b>76. 여성적 특성 강조의 위험은?</b><br>섬세함 등 고정관념을 반복할 수 있다.</div>
+<div class="q"><b>77. 과학자 그림 그리기 사례의 의미는?</b><br>과학자의 이미지가 남성 중심으로 사회화된다.</div>
+<div class="q"><b>78. 마리 퀴리 사례의 의미는?</b><br>여성 과학자의 공헌이 배제될 수 있다.</div>
+<div class="q"><b>79. Rosalind Franklin 사례의 의미는?</b><br>과학사에서 여성 기여가 지워질 수 있다.</div>
+<div class="q"><b>80. 암컷 쥐 실험 사례의 의미는?</b><br>실험 설계가 결과와 지식을 바꾼다.</div>
+<div class="q"><b>81. 공/사 이분법이란?</b><br>공적 영역과 사적 가족 영역을 나누는 관념.</div>
+<div class="q"><b>82. 공/사 이분법의 문제는?</b><br>가족 내 돌봄과 폭력을 사적 문제로 숨긴다.</div>
+<div class="q"><b>83. 모성 신화화란?</b><br>어머니를 희생적 존재로 이상화하는 것.</div>
+<div class="q"><b>84. 모성 신화화의 위험은?</b><br>여성에게 과도한 책임을 부여한다.</div>
+<div class="q"><b>85. 재벌과 가족주의의 관계는?</b><br>기업이 가족 세습 원리로 운영되는 사례.</div>
+<div class="q"><b>86. 금수저/흙수저 담론의 의미는?</b><br>가족 배경이 삶의 출발선을 결정한다는 인식.</div>
+<div class="q"><b>87. 가족의 짐을 사회로란?</b><br>돌봄과 생계 책임을 가족만이 아니라 사회가 나눠야 한다는 뜻.</div>
+<div class="q"><b>88. 1인 가구 증가는 무엇을 보여주는가?</b><br>사는 방식이 다양해지고 있음을 보여준다.</div>
+<div class="q"><b>89. 비혼 출산 논쟁의 의미는?</b><br>결혼과 출산을 분리해 생각하는 변화.</div>
+<div class="q"><b>90. 동거법/생활동반자 논의의 의미는?</b><br>혼인 밖 관계도 법적 보호가 필요하다는 주장.</div>
+<div class="q"><b>91. 서술형에서 중요한 작성법은?</b><br>개념 정의 → 구조적 이유 → 사례 → 여성학적 의미.</div>
+<div class="q"><b>92. 약술형 답안 작성법은?</b><br>정의 1문장 + 핵심 특징 2개 + 예시 1개.</div>
+<div class="q"><b>93. 단답형 공부법은?</b><br>핵심 용어의 한국어 이름과 짧은 정의를 외운다.</div>
+<div class="q"><b>94. 가장 중요한 서술형 주제 1은?</b><br>강한 객관성.</div>
+<div class="q"><b>95. 가장 중요한 서술형 주제 2는?</b><br>정상가족 이데올로기와 가족주의.</div>
+<div class="q"><b>96. 가장 중요한 서술형 주제 3은?</b><br>젠더폭력/성매매의 구조적 이해.</div>
+<div class="q"><b>97. 가장 중요한 서술형 주제 4는?</b><br>보이지 않는 노동과 젠더 격차.</div>
+<div class="q"><b>98. 가장 중요한 서술형 주제 5는?</b><br>젠더 관점이 왜 필요한가.</div>
+<div class="q"><b>99. 시험 전체를 관통하는 핵심은?</b><br>개인 경험을 사회 구조와 권력관계 속에서 이해하는 것.</div>
+<div class="q"><b>100. 답안에 사례를 넣어야 하는 이유는?</b><br>개념을 실제 사회 문제와 연결해야 점수가 높기 때문.</div>
+  </div></section>
+
+  <section><h2>서술형 답안 틀</h2>
+    <details><summary>강한 객관성 답안 틀</summary><div class="content"><p><b>정의:</b> 강한 객관성은 객관성을 단순히 중립적 절차로 보지 않고, 누가 어떤 위치에서 어떤 문제를 선택했는지까지 성찰하는 더 넓은 객관성이다.</p><p><b>핵심:</b> 기존 객관성은 남성, 비장애인, 다수자의 관점을 보편으로 착각할 수 있다. 반면 페미니스트 과학철학은 소수자의 경험을 포함할 때 더 정확하고 넓은 지식이 가능하다고 본다.</p><p><b>예시:</b> 지하철 엘리베이터는 장애인만을 위한 특혜가 아니라 노인, 임산부, 다친 사람, 짐이 많은 사람 모두에게 접근권을 넓힌다.</p></div></details>
+    <details><summary>정상가족 이데올로기 답안 틀</summary><div class="content"><p><b>정의:</b> 정상가족 이데올로기는 아버지, 어머니, 자녀로 구성된 이성애 핵가족을 가장 정상적이고 바람직한 가족으로 보는 믿음이다.</p><p><b>문제:</b> 이 관점은 1인 가구, 동거, 한부모, 성소수자 가족, 비친족 가구 등 다양한 삶을 비정상으로 만들고 차별한다. 또한 가족 안의 가사노동, 돌봄노동, 기획노동이 여성에게 집중되는 문제를 가린다.</p><p><b>여성학적 의미:</b> 가족은 자연스러운 사적 공간이 아니라 젠더 권력과 사회 불평등이 작동하는 공간이다.</p></div></details>
+  </section>
+
+</div><button class="topbtn" onclick="location.href='#top'">TOP</button>
+<script>
+const input=document.getElementById('search');
+input.addEventListener('input',()=>{const v=input.value.toLowerCase().trim();document.querySelectorAll('details, .q').forEach(el=>{if(!v){el.style.display='';return}el.style.display=el.textContent.toLowerCase().includes(v)?'':'none';});});
+</script>
+</body></html>
